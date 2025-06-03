@@ -1,0 +1,768 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #7a7e85;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">util</span><span class="s2">.</span><span class="s1">Scanner</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">java</span><span class="s2">.</span><span class="s1">time</span><span class="s2">.</span><span class="s1">Year</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">Main </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">) {</span>
+
+        <span class="s3">//Exercicio 01 - Escreva um programa em Java e crie uma variável cg=hamada &quot;planeta&quot; e atribua a um valor &quot;plutão&quot;</span>
+
+        <span class="s1">String planeta </span><span class="s2">= </span><span class="s4">&quot;plutão&quot;</span><span class="s2">;</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">planeta</span><span class="s2">);</span>
+
+        <span class="s1">ex2</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex2</span><span class="s2">(){</span>
+
+        <span class="s3">//Exercicio 02 - Escreva um programa em Java em que o usuário informe o seu nome e exiba a mensagem &quot;Olá, [NomeDoUsuario]&quot;.</span>
+
+        <span class="s1">Scanner teste </span><span class="s2">=  </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite qual é o seu nome?&quot;</span><span class="s2">);</span>
+        <span class="s1">String nome </span><span class="s2">= </span><span class="s1">teste</span><span class="s2">.</span><span class="s1">next</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Olá&quot; </span><span class="s2">+ </span><span class="s1">nome</span><span class="s2">);</span>
+
+        <span class="s1">ex3</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public  static void </span><span class="s1">ex3</span><span class="s2">(){</span>
+
+        <span class="s1">Scanner novo </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite qual é o seu nome?&quot;</span><span class="s2">);</span>
+        <span class="s1">String nome </span><span class="s2">= </span><span class="s1">novo</span><span class="s2">.</span><span class="s1">next</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite qual é a sua idade&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">idade </span><span class="s2">= </span><span class="s1">novo</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Olá, &quot; </span><span class="s2">+</span><span class="s1">nome</span><span class="s2">+ </span><span class="s4">&quot;sua idade é&quot; </span><span class="s2">+</span><span class="s1">idade</span><span class="s2">);</span>
+
+        <span class="s1">ex4</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">ex4</span><span class="s2">() {</span>
+        <span class="s1">Scanner input </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">opcao</span><span class="s2">;</span>
+
+        <span class="s0">do </span><span class="s2">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">=== Exercício 04: Cálculo de Áreas ===&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;1 - Quadrado&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;2 - Retângulo&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;3 - Triângulo&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;4 - Círculo&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;5 - Losango&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;6 - Trapézio&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;7 - Paralelogramo&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;0 - Voltar&quot;</span><span class="s2">);</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Escolha uma opção: &quot;</span><span class="s2">);</span>
+            <span class="s1">opcao </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+            <span class="s0">switch </span><span class="s2">(</span><span class="s1">opcao</span><span class="s2">) {</span>
+                <span class="s0">case </span><span class="s5">1</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe o lado do quadrado: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">lado </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Área do quadrado: &quot; </span><span class="s2">+ (</span><span class="s1">lado </span><span class="s2">* </span><span class="s1">lado</span><span class="s2">));</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s5">2</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a base do retângulo: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">baseR </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a altura do retângulo: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">alturaR </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Área do retângulo: &quot; </span><span class="s2">+ (</span><span class="s1">baseR </span><span class="s2">* </span><span class="s1">alturaR</span><span class="s2">));</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s5">3</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a base do triângulo: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">baseT </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a altura do triângulo: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">alturaT </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Área do triângulo: &quot; </span><span class="s2">+ ((</span><span class="s1">baseT </span><span class="s2">* </span><span class="s1">alturaT</span><span class="s2">) / </span><span class="s5">2</span><span class="s2">));</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s5">4</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe o raio do círculo: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">raio </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Área do círculo: &quot; </span><span class="s2">+ (</span><span class="s1">Math</span><span class="s2">.</span><span class="s1">PI </span><span class="s2">* </span><span class="s1">raio </span><span class="s2">* </span><span class="s1">raio</span><span class="s2">));</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s5">5</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a diagonal maior do losango: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">D </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a diagonal menor do losango: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">d </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Área do losango: &quot; </span><span class="s2">+ ((</span><span class="s1">D </span><span class="s2">* </span><span class="s1">d</span><span class="s2">) / </span><span class="s5">2</span><span class="s2">));</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s5">6</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a base maior do trapézio: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">baseMaior </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a base menor do trapézio: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">baseMenor </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a altura do trapézio: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">alturaTrap </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Área do trapézio: &quot; </span><span class="s2">+ (((</span><span class="s1">baseMaior </span><span class="s2">+ </span><span class="s1">baseMenor</span><span class="s2">) * </span><span class="s1">alturaTrap</span><span class="s2">) / </span><span class="s5">2</span><span class="s2">));</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s5">7</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a base do paralelogramo: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">baseP </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Informe a altura do paralelogramo: &quot;</span><span class="s2">);</span>
+                    <span class="s0">double </span><span class="s1">alturaP </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Área do paralelogramo: &quot; </span><span class="s2">+ (</span><span class="s1">baseP </span><span class="s2">* </span><span class="s1">alturaP</span><span class="s2">));</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">case </span><span class="s5">0</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Voltando ao menu principal...&quot;</span><span class="s2">);</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s0">default</span><span class="s2">:</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Opção inválida. Tente novamente.&quot;</span><span class="s2">);</span>
+            <span class="s2">}</span>
+
+        <span class="s2">} </span><span class="s0">while </span><span class="s2">(</span><span class="s1">opcao </span><span class="s2">!= </span><span class="s5">0</span><span class="s2">);</span>
+
+        <span class="s1">ex5</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex5</span><span class="s2">() {</span>
+        <span class="s1">Scanner input </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite um número:&quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">numero </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">numero </span><span class="s2">&gt; </span><span class="s5">0</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;O número é positivo&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">numero </span><span class="s2">&lt; </span><span class="s5">0</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;O número é negativo&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;O número é neutro (zero)&quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">ex6</span><span class="s2">();</span>
+    <span class="s2">}</span>
+
+    <span class="s0">public static void </span><span class="s1">ex6</span><span class="s2">() {</span>
+        <span class="s1">Scanner input </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite o primeiro número:&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">a </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite o segundo número:&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">b </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite o terceiro número:&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">c </span><span class="s2">= </span><span class="s1">input</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">a </span><span class="s2">&gt; </span><span class="s1">b </span><span class="s2">&amp;&amp; </span><span class="s1">a </span><span class="s2">&gt; </span><span class="s1">c</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;O maior número é:&quot; </span><span class="s2">+</span><span class="s1">a</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">( </span><span class="s1">b </span><span class="s2">&gt; </span><span class="s1">a </span><span class="s2">&amp;&amp; </span><span class="s1">b </span><span class="s2">&gt; </span><span class="s1">c</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;O maior número é:&quot; </span><span class="s2">+</span><span class="s1">b</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;O maior número é:&quot; </span><span class="s2">+</span><span class="s1">c</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">ex61</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex61</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">numeros </span><span class="s2">= </span><span class="s0">new int</span><span class="s2">[</span><span class="s5">4</span><span class="s2">];</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite 4 números diferentes:&quot;</span><span class="s2">);</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">4</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Número&quot; </span><span class="s2">+(</span><span class="s1">i </span><span class="s2">+ </span><span class="s5">1</span><span class="s2">) + </span><span class="s4">&quot;: &quot;</span><span class="s2">);</span>
+            <span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">j </span><span class="s2">&lt; </span><span class="s1">i</span><span class="s2">; </span><span class="s1">j</span><span class="s2">++) {</span>
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] == </span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">j</span><span class="s2">]) {</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Os números deve ser diferentes. Tente novamente&quot;</span><span class="s2">);</span>
+                    <span class="s1">i</span><span class="s2">--;</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s1">ex7</span><span class="s2">();</span>
+
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex7</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">numeros </span><span class="s2">= </span><span class="s0">new int</span><span class="s2">[</span><span class="s5">3</span><span class="s2">];</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite 3 números diferentes:&quot;</span><span class="s2">);</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">3</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Número &quot; </span><span class="s2">+ (</span><span class="s1">i </span><span class="s2">+ </span><span class="s5">1</span><span class="s2">) + </span><span class="s4">&quot;: &quot;</span><span class="s2">);</span>
+            <span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">j </span><span class="s2">&lt; </span><span class="s1">i</span><span class="s2">; </span><span class="s1">j</span><span class="s2">++) {</span>
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] == </span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">j</span><span class="s2">]) {</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Os números devem ser diferentes. Tente novamente.&quot;</span><span class="s2">);</span>
+                    <span class="s1">i</span><span class="s2">--;</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+        <span class="s0">int </span><span class="s1">menor </span><span class="s2">= </span><span class="s1">numeros</span><span class="s2">[</span><span class="s5">0</span><span class="s2">];</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">3</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] &lt; </span><span class="s1">menor</span><span class="s2">) {</span>
+                <span class="s1">menor </span><span class="s2">= </span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">];</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s0">int </span><span class="s1">somaDosDoisMaiores </span><span class="s2">= </span><span class="s1">numeros</span><span class="s2">[</span><span class="s5">0</span><span class="s2">] + </span><span class="s1">numeros</span><span class="s2">[</span><span class="s5">1</span><span class="s2">] + </span><span class="s1">numeros</span><span class="s2">[</span><span class="s5">2</span><span class="s2">] - </span><span class="s1">menor</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;A soma dos dois maiores números é: &quot; </span><span class="s2">+ </span><span class="s1">somaDosDoisMaiores</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex71</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex71</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s0">int</span><span class="s2">[] </span><span class="s1">numeros </span><span class="s2">= </span><span class="s0">new int</span><span class="s2">[</span><span class="s5">5</span><span class="s2">];</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite 5 números diferentes:&quot;</span><span class="s2">);</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">5</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Número &quot; </span><span class="s2">+ (</span><span class="s1">i </span><span class="s2">+ </span><span class="s5">1</span><span class="s2">) + </span><span class="s4">&quot;: &quot;</span><span class="s2">);</span>
+            <span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">j </span><span class="s2">&lt; </span><span class="s1">i</span><span class="s2">; </span><span class="s1">j</span><span class="s2">++) {</span>
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] == </span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">j</span><span class="s2">]) {</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Os números devem ser diferentes. Tente novamente.&quot;</span><span class="s2">);</span>
+                    <span class="s1">i</span><span class="s2">--; </span><span class="s3">// repete a entrada atual</span>
+                    <span class="s0">break</span><span class="s2">;</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s0">int </span><span class="s1">maior1 </span><span class="s2">= </span><span class="s1">Integer</span><span class="s2">.</span><span class="s1">MIN_VALUE</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">maior2 </span><span class="s2">= </span><span class="s1">Integer</span><span class="s2">.</span><span class="s1">MIN_VALUE</span><span class="s2">;</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">num </span><span class="s2">: </span><span class="s1">numeros</span><span class="s2">) {</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">num </span><span class="s2">&gt; </span><span class="s1">maior1</span><span class="s2">) {</span>
+                <span class="s1">maior2 </span><span class="s2">= </span><span class="s1">maior1</span><span class="s2">;</span>
+                <span class="s1">maior1 </span><span class="s2">= </span><span class="s1">num</span><span class="s2">;</span>
+            <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">num </span><span class="s2">&gt; </span><span class="s1">maior2</span><span class="s2">) {</span>
+                <span class="s1">maior2 </span><span class="s2">= </span><span class="s1">num</span><span class="s2">;</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s0">int </span><span class="s1">soma </span><span class="s2">= </span><span class="s1">maior1 </span><span class="s2">+ </span><span class="s1">maior2</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;A soma dos dois maiores números é: &quot; </span><span class="s2">+ </span><span class="s1">soma</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex8</span><span class="s2">();</span>
+
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex8</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o primeiro valor: &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">valor1 </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s0">double </span><span class="s1">valor2</span><span class="s2">;</span>
+
+        <span class="s0">do </span><span class="s2">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o segundo valor (maior que zero): &quot;</span><span class="s2">);</span>
+            <span class="s1">valor2 </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">valor2 </span><span class="s2">&lt;= </span><span class="s5">0</span><span class="s2">) {</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Valor inválido! O segundo valor deve ser maior que zero.&quot;</span><span class="s2">);</span>
+            <span class="s2">}</span>
+        <span class="s2">} </span><span class="s0">while </span><span class="s2">(</span><span class="s1">valor2 </span><span class="s2">&lt;= </span><span class="s5">0</span><span class="s2">);</span>
+
+        <span class="s0">double </span><span class="s1">resultado </span><span class="s2">= </span><span class="s1">valor1 </span><span class="s2">/ </span><span class="s1">valor2</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Resultado da divisão: &quot; </span><span class="s2">+ </span><span class="s1">resultado</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex9</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex9</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s0">double</span><span class="s2">[] </span><span class="s1">valores </span><span class="s2">= </span><span class="s0">new double</span><span class="s2">[</span><span class="s5">10</span><span class="s2">];</span>
+        <span class="s0">double </span><span class="s1">soma </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite 10 valores:&quot;</span><span class="s2">);</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">10</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Valor &quot; </span><span class="s2">+ (</span><span class="s1">i </span><span class="s2">+ </span><span class="s5">1</span><span class="s2">) + </span><span class="s4">&quot;: &quot;</span><span class="s2">);</span>
+            <span class="s1">valores</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+            <span class="s1">soma </span><span class="s2">+= </span><span class="s1">valores</span><span class="s2">[</span><span class="s1">i</span><span class="s2">];</span>
+        <span class="s2">}</span>
+
+        <span class="s0">double </span><span class="s1">media </span><span class="s2">= </span><span class="s1">soma </span><span class="s2">/ </span><span class="s5">10</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Valores informados:&quot;</span><span class="s2">);</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">10</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Valor &quot; </span><span class="s2">+ (</span><span class="s1">i </span><span class="s2">+ </span><span class="s5">1</span><span class="s2">) + </span><span class="s4">&quot;: &quot; </span><span class="s2">+ </span><span class="s1">valores</span><span class="s2">[</span><span class="s1">i</span><span class="s2">]);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Média aritmética: %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">media</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex10</span><span class="s2">();</span>
+
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex10</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s0">double</span><span class="s2">[] </span><span class="s1">notas </span><span class="s2">= </span><span class="s0">new double</span><span class="s2">[</span><span class="s5">4</span><span class="s2">];</span>
+        <span class="s0">double </span><span class="s1">soma </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite as 4 notas do aluno:&quot;</span><span class="s2">);</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">4</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Nota &quot; </span><span class="s2">+ (</span><span class="s1">i </span><span class="s2">+ </span><span class="s5">1</span><span class="s2">) + </span><span class="s4">&quot;: &quot;</span><span class="s2">);</span>
+            <span class="s1">notas</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+            <span class="s1">soma </span><span class="s2">+= </span><span class="s1">notas</span><span class="s2">[</span><span class="s1">i</span><span class="s2">];</span>
+        <span class="s2">}</span>
+
+        <span class="s0">double </span><span class="s1">media </span><span class="s2">= </span><span class="s1">soma </span><span class="s2">/ </span><span class="s5">4</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Média do semestre: %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">media</span><span class="s2">);</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">media </span><span class="s2">&gt;= </span><span class="s5">6.0</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;PARABÉNS! Você foi aprovado!&quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex11</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex11</span><span class="s2">() {</span>
+        <span class="s0">try </span><span class="s2">{</span>
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">30</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&gt;= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i</span><span class="s2">--) {</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i</span><span class="s2">);</span>
+                <span class="s1">Thread</span><span class="s2">.</span><span class="s1">sleep</span><span class="s2">(</span><span class="s5">1000</span><span class="s2">);</span>
+            <span class="s2">}</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;EXPLOSÃO&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">catch </span><span class="s2">(</span><span class="s1">InterruptedException e</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;A contagem foi interrompida.&quot;</span><span class="s2">);</span>
+
+
+        <span class="s2">}</span>
+
+        <span class="s1">ex12</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex12</span><span class="s2">() {</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">10</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&gt;= </span><span class="s5">1</span><span class="s2">; </span><span class="s1">i</span><span class="s2">--) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">ex13</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex13</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o primeiro número (menor): &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">num1 </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o segundo número (maior): &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">num2 </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">num1 </span><span class="s2">&gt;= </span><span class="s1">num2</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Erro: O primeiro número deve ser menor que o segundo.&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s0">int </span><span class="s1">soma </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+            <span class="s0">int </span><span class="s1">quantidade </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Números no intervalo:&quot;</span><span class="s2">);</span>
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s1">num1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt;= </span><span class="s1">num2</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s1">i</span><span class="s2">);</span>
+                <span class="s1">soma </span><span class="s2">+= </span><span class="s1">i</span><span class="s2">;</span>
+                <span class="s1">quantidade</span><span class="s2">++;</span>
+            <span class="s2">}</span>
+
+            <span class="s0">double </span><span class="s1">media </span><span class="s2">= (</span><span class="s0">double</span><span class="s2">) </span><span class="s1">soma </span><span class="s2">/ </span><span class="s1">quantidade</span><span class="s2">;</span>
+
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Média aritmética dos números: %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">media</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex14</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex14</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">aprovados </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+        <span class="s1">String resposta</span><span class="s2">;</span>
+
+        <span class="s0">do </span><span class="s2">{</span>
+            <span class="s0">double </span><span class="s1">soma </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Digite as 6 notas do aluno:&quot;</span><span class="s2">);</span>
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt;= </span><span class="s5">6</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Nota &quot; </span><span class="s2">+ </span><span class="s1">i </span><span class="s2">+ </span><span class="s4">&quot;: &quot;</span><span class="s2">);</span>
+                <span class="s0">double </span><span class="s1">nota </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+                <span class="s1">soma </span><span class="s2">+= </span><span class="s1">nota</span><span class="s2">;</span>
+            <span class="s2">}</span>
+
+            <span class="s0">double </span><span class="s1">media </span><span class="s2">= </span><span class="s1">soma </span><span class="s2">/ </span><span class="s5">6</span><span class="s2">;</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Média final: %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">media</span><span class="s2">);</span>
+
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">media </span><span class="s2">&gt;= </span><span class="s5">6.5</span><span class="s2">) {</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Aluno aprovado!&quot;</span><span class="s2">);</span>
+                <span class="s1">aprovados</span><span class="s2">++;</span>
+            <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Aluno reprovado.&quot;</span><span class="s2">);</span>
+            <span class="s2">}</span>
+
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Calcular a média de outro aluno? Sim/Não: &quot;</span><span class="s2">);</span>
+            <span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">(); </span><span class="s3">// limpa o buffer</span>
+            <span class="s1">resposta </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">().</span><span class="s1">trim</span><span class="s2">();</span>
+
+        <span class="s2">} </span><span class="s0">while </span><span class="s2">(</span><span class="s1">resposta</span><span class="s2">.</span><span class="s1">equalsIgnoreCase</span><span class="s2">(</span><span class="s4">&quot;Sim&quot;</span><span class="s2">) || </span><span class="s1">resposta</span><span class="s2">.</span><span class="s1">equalsIgnoreCase</span><span class="s2">(</span><span class="s4">&quot;S&quot;</span><span class="s2">));</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Quantidade de alunos aprovados: &quot; </span><span class="s2">+ </span><span class="s1">aprovados</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex15</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex15</span><span class="s2">() {</span>
+        <span class="s0">double </span><span class="s1">alturaAnacleto </span><span class="s2">= </span><span class="s5">1.50</span><span class="s2">;</span>
+        <span class="s0">double </span><span class="s1">alturaFelisberto </span><span class="s2">= </span><span class="s5">1.10</span><span class="s2">;</span>
+
+        <span class="s0">double </span><span class="s1">crescimentoAnacleto </span><span class="s2">= </span><span class="s5">0.02</span><span class="s2">;</span>
+        <span class="s0">double </span><span class="s1">crescimentoFelisberto </span><span class="s2">= </span><span class="s5">0.03</span><span class="s2">;</span>
+
+        <span class="s0">int </span><span class="s1">anos </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+
+        <span class="s0">while </span><span class="s2">(</span><span class="s1">alturaFelisberto </span><span class="s2">&lt;= </span><span class="s1">alturaAnacleto</span><span class="s2">) {</span>
+            <span class="s1">alturaAnacleto </span><span class="s2">+= </span><span class="s1">crescimentoAnacleto</span><span class="s2">;</span>
+            <span class="s1">alturaFelisberto </span><span class="s2">+= </span><span class="s1">crescimentoFelisberto</span><span class="s2">;</span>
+            <span class="s1">anos</span><span class="s2">++;</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Serão necessários &quot; </span><span class="s2">+ </span><span class="s1">anos </span><span class="s2">+ </span><span class="s4">&quot; anos para que Felisberto seja maior que Anacleto.&quot;</span><span class="s2">);</span>
+
+        <span class="s1">ex16</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex16</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o número total de eleitores: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">totalEleitores </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o percentual de votos brancos (%): &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">percBrancos </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o percentual de votos válidos (%): &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">percValidos </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o percentual de votos nulos (%): &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">percNulos </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s0">double </span><span class="s1">somaPercentuais </span><span class="s2">= </span><span class="s1">percBrancos </span><span class="s2">+ </span><span class="s1">percValidos </span><span class="s2">+ </span><span class="s1">percNulos</span><span class="s2">;</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">somaPercentuais </span><span class="s2">&gt; </span><span class="s5">100</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Erro: A soma dos percentuais ultrapassa 100%.&quot;</span><span class="s2">);</span>
+            <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+            <span class="s0">return</span><span class="s2">;</span>
+        <span class="s2">}</span>
+
+        <span class="s0">int </span><span class="s1">votosBrancos </span><span class="s2">= (</span><span class="s0">int</span><span class="s2">) </span><span class="s1">Math</span><span class="s2">.</span><span class="s1">round</span><span class="s2">(</span><span class="s1">totalEleitores </span><span class="s2">* </span><span class="s1">percBrancos </span><span class="s2">/ </span><span class="s5">100</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">votosValidos </span><span class="s2">= (</span><span class="s0">int</span><span class="s2">) </span><span class="s1">Math</span><span class="s2">.</span><span class="s1">round</span><span class="s2">(</span><span class="s1">totalEleitores </span><span class="s2">* </span><span class="s1">percValidos </span><span class="s2">/ </span><span class="s5">100</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">votosNulos </span><span class="s2">= (</span><span class="s0">int</span><span class="s2">) </span><span class="s1">Math</span><span class="s2">.</span><span class="s1">round</span><span class="s2">(</span><span class="s1">totalEleitores </span><span class="s2">* </span><span class="s1">percNulos </span><span class="s2">/ </span><span class="s5">100</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Quantidade de votos por categoria:&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Votos brancos: &quot; </span><span class="s2">+ </span><span class="s1">votosBrancos</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Votos válidos: &quot; </span><span class="s2">+ </span><span class="s1">votosValidos</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Votos nulos: &quot; </span><span class="s2">+ </span><span class="s1">votosNulos</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex17</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex17</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o custo de fábrica do carro: R$ &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">custoFabrica </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s0">double </span><span class="s1">percentualDistribuidor </span><span class="s2">= </span><span class="s5">0.28</span><span class="s2">;</span>
+        <span class="s0">double </span><span class="s1">percentualImpostos </span><span class="s2">= </span><span class="s5">0.45</span><span class="s2">;</span>
+
+        <span class="s0">double </span><span class="s1">custoFinal </span><span class="s2">= </span><span class="s1">custoFabrica </span><span class="s2">+ (</span><span class="s1">custoFabrica </span><span class="s2">* </span><span class="s1">percentualDistribuidor</span><span class="s2">) + (</span><span class="s1">custoFabrica </span><span class="s2">* </span><span class="s1">percentualImpostos</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;O custo final ao consumidor é: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">custoFinal</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex18</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex18</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Número de carros vendidos: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">carrosVendidos </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Valor total das vendas (R$): &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">valorTotalVendas </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Salário fixo mensal do vendedor (R$) [padrão 5000]: &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">salarioFixo </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Comissão fixa por carro vendido (R$): &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">comissaoPorCarro </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+
+        <span class="s0">double </span><span class="s1">comissaoTotalCarros </span><span class="s2">= </span><span class="s1">carrosVendidos </span><span class="s2">* </span><span class="s1">comissaoPorCarro</span><span class="s2">;</span>
+        <span class="s0">double </span><span class="s1">comissaoPercentual </span><span class="s2">= </span><span class="s1">valorTotalVendas </span><span class="s2">* </span><span class="s5">0.05</span><span class="s2">;</span>
+        <span class="s0">double </span><span class="s1">salarioFinal </span><span class="s2">= </span><span class="s1">salarioFixo </span><span class="s2">+ </span><span class="s1">comissaoTotalCarros </span><span class="s2">+ </span><span class="s1">comissaoPercentual</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">--- Detalhamento do salário ---&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Salário fixo mensal: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">salarioFixo</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Comissão fixa por carro vendido: R$ %.2f x %d carros = R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">,</span>
+                <span class="s1">comissaoPorCarro</span><span class="s2">, </span><span class="s1">carrosVendidos</span><span class="s2">, </span><span class="s1">comissaoTotalCarros</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;5%% do valor total das vendas: 5%% de R$ %.2f = R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">,</span>
+                <span class="s1">valorTotalVendas</span><span class="s2">, </span><span class="s1">comissaoPercentual</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Salário final: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">salarioFinal</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex19</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex19</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o lado A: &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">A </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o lado B: &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">B </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o lado C: &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">C </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s0">if </span><span class="s2">( (</span><span class="s1">A </span><span class="s2">&lt; </span><span class="s1">B </span><span class="s2">+ </span><span class="s1">C</span><span class="s2">) &amp;&amp; (</span><span class="s1">B </span><span class="s2">&lt; </span><span class="s1">A </span><span class="s2">+ </span><span class="s1">C</span><span class="s2">) &amp;&amp; (</span><span class="s1">C </span><span class="s2">&lt; </span><span class="s1">A </span><span class="s2">+ </span><span class="s1">B</span><span class="s2">) ) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Os valores formam um triângulo.&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Os valores não formam um triângulo.&quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex20</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex20</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s3">// Entrada de dados</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Nome do produto: &quot;</span><span class="s2">);</span>
+        <span class="s1">String nomeProduto </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextLine</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Quantidade adquirida: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">quantidade </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Preço unitário (R$): &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">precoUnitario </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s3">// Cálculo do valor da venda</span>
+        <span class="s0">double </span><span class="s1">valorVenda </span><span class="s2">= </span><span class="s1">quantidade </span><span class="s2">* </span><span class="s1">precoUnitario</span><span class="s2">;</span>
+
+        <span class="s3">// Determinação do percentual de desconto</span>
+        <span class="s0">double </span><span class="s1">percentualDesconto</span><span class="s2">;</span>
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">quantidade </span><span class="s2">&lt;= </span><span class="s5">5</span><span class="s2">) {</span>
+            <span class="s1">percentualDesconto </span><span class="s2">= </span><span class="s5">0.02</span><span class="s2">;  </span><span class="s3">// 2%</span>
+        <span class="s2">} </span><span class="s0">else if </span><span class="s2">(</span><span class="s1">quantidade </span><span class="s2">&lt;= </span><span class="s5">10</span><span class="s2">) {</span>
+            <span class="s1">percentualDesconto </span><span class="s2">= </span><span class="s5">0.03</span><span class="s2">;  </span><span class="s3">// 3%</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">percentualDesconto </span><span class="s2">= </span><span class="s5">0.05</span><span class="s2">;  </span><span class="s3">// 5%</span>
+        <span class="s2">}</span>
+
+        <span class="s3">// Cálculo do desconto e imposto</span>
+        <span class="s0">double </span><span class="s1">desconto </span><span class="s2">= </span><span class="s1">valorVenda </span><span class="s2">* </span><span class="s1">percentualDesconto</span><span class="s2">;</span>
+        <span class="s0">double </span><span class="s1">imposto </span><span class="s2">= </span><span class="s1">valorVenda </span><span class="s2">* </span><span class="s5">0.20</span><span class="s2">;</span>
+
+        <span class="s0">double </span><span class="s1">totalPagar </span><span class="s2">= </span><span class="s1">valorVenda </span><span class="s2">- </span><span class="s1">desconto </span><span class="s2">+ </span><span class="s1">imposto</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">======= NOTA FISCAL =======&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Produto: &quot; </span><span class="s2">+ </span><span class="s1">nomeProduto</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Quantidade: &quot; </span><span class="s2">+ </span><span class="s1">quantidade</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Preço unitário: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">precoUnitario</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Valor da venda: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">valorVenda</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Percentual de desconto: %.0f%%</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">percentualDesconto </span><span class="s2">* </span><span class="s5">100</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Valor do desconto: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">desconto</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Imposto (20%%): R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">imposto</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Total a pagar: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">totalPagar</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;==========================&quot;</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex21</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex21</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">anoAtual </span><span class="s2">= </span><span class="s1">Year</span><span class="s2">.</span><span class="s1">now</span><span class="s2">().</span><span class="s1">getValue</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o número do empregado (código): &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">codigo </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o ano de nascimento: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">anoNascimento </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o ano de ingresso na empresa: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">anoIngresso </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s0">int </span><span class="s1">idade </span><span class="s2">= </span><span class="s1">anoAtual </span><span class="s2">- </span><span class="s1">anoNascimento</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">tempoTrabalho </span><span class="s2">= </span><span class="s1">anoAtual </span><span class="s2">- </span><span class="s1">anoIngresso</span><span class="s2">;</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\n</span><span class="s4">Idade do empregado: &quot; </span><span class="s2">+ </span><span class="s1">idade </span><span class="s2">+ </span><span class="s4">&quot; anos&quot;</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Tempo de trabalho: &quot; </span><span class="s2">+ </span><span class="s1">tempoTrabalho </span><span class="s2">+ </span><span class="s4">&quot; anos&quot;</span><span class="s2">);</span>
+
+        <span class="s3">// Verifica condições de aposentadoria</span>
+        <span class="s0">boolean </span><span class="s1">requerAposentadoria </span><span class="s2">= (</span><span class="s1">idade </span><span class="s2">&gt;= </span><span class="s5">65</span><span class="s2">) ||</span>
+                <span class="s2">(</span><span class="s1">tempoTrabalho </span><span class="s2">&gt;= </span><span class="s5">30</span><span class="s2">) ||</span>
+                <span class="s2">(</span><span class="s1">idade </span><span class="s2">&gt;= </span><span class="s5">60 </span><span class="s2">&amp;&amp; </span><span class="s1">tempoTrabalho </span><span class="s2">&gt;= </span><span class="s5">25</span><span class="s2">);</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">requerAposentadoria</span><span class="s2">) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Requerer aposentadoria&quot;</span><span class="s2">);</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Não requerer&quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex22</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex22</span><span class="s2">() {</span>
+        <span class="s0">int </span><span class="s1">numeroInicial </span><span class="s2">= </span><span class="s5">1</span><span class="s2">;</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt;= </span><span class="s5">20</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">i </span><span class="s2">+ </span><span class="s4">&quot;, &quot;</span><span class="s2">);</span>
+
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s1">numeroInicial</span><span class="s2">; </span><span class="s1">j </span><span class="s2">&lt; </span><span class="s1">numeroInicial </span><span class="s2">+ </span><span class="s5">10</span><span class="s2">; </span><span class="s1">j</span><span class="s2">++) {</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">j</span><span class="s2">);</span>
+
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">j </span><span class="s2">&lt; </span><span class="s1">numeroInicial </span><span class="s2">+ </span><span class="s5">9</span><span class="s2">) {</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot; &quot;</span><span class="s2">);</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">();</span>
+
+            <span class="s1">numeroInicial </span><span class="s2">+= </span><span class="s5">10</span><span class="s2">;</span>
+        <span class="s2">}</span>
+        <span class="s1">ex23</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex23</span><span class="s2">() {</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt;= </span><span class="s5">20</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">i </span><span class="s2">+ </span><span class="s4">&quot;, &quot;</span><span class="s2">);</span>
+
+            <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">j </span><span class="s2">= </span><span class="s5">1</span><span class="s2">; </span><span class="s1">j </span><span class="s2">&lt;= </span><span class="s5">10</span><span class="s2">; </span><span class="s1">j</span><span class="s2">++) {</span>
+                <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">j</span><span class="s2">);</span>
+                <span class="s0">if </span><span class="s2">(</span><span class="s1">j </span><span class="s2">&lt; </span><span class="s5">10</span><span class="s2">) {</span>
+                    <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot; &quot;</span><span class="s2">);</span>
+                <span class="s2">}</span>
+            <span class="s2">}</span>
+
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">();</span>
+        <span class="s2">}</span>
+        <span class="s1">ex24</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex24</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o número de horas trabalhadas no mês: &quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">horasTrabalhadas </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextInt</span><span class="s2">();</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Digite o salário por hora: R$ &quot;</span><span class="s2">);</span>
+        <span class="s0">double </span><span class="s1">salarioHora </span><span class="s2">= </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">nextDouble</span><span class="s2">();</span>
+
+        <span class="s0">int </span><span class="s1">horasNormaisMes </span><span class="s2">= </span><span class="s5">40 </span><span class="s2">* </span><span class="s5">4</span><span class="s2">;</span>
+
+        <span class="s0">double </span><span class="s1">salarioTotal</span><span class="s2">;</span>
+
+        <span class="s0">if </span><span class="s2">(</span><span class="s1">horasTrabalhadas </span><span class="s2">&lt;= </span><span class="s1">horasNormaisMes</span><span class="s2">) {</span>
+            <span class="s1">salarioTotal </span><span class="s2">= </span><span class="s1">horasTrabalhadas </span><span class="s2">* </span><span class="s1">salarioHora</span><span class="s2">;</span>
+        <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+            <span class="s0">int </span><span class="s1">horasExtras </span><span class="s2">= </span><span class="s1">horasTrabalhadas </span><span class="s2">- </span><span class="s1">horasNormaisMes</span><span class="s2">;</span>
+            <span class="s0">double </span><span class="s1">valorHoraExtra </span><span class="s2">= </span><span class="s1">salarioHora </span><span class="s2">* </span><span class="s5">1.5</span><span class="s2">;  </span><span class="s3">// 50% a mais</span>
+            <span class="s1">salarioTotal </span><span class="s2">= (</span><span class="s1">horasNormaisMes </span><span class="s2">* </span><span class="s1">salarioHora</span><span class="s2">) + (</span><span class="s1">horasExtras </span><span class="s2">* </span><span class="s1">valorHoraExtra</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">printf</span><span class="s2">(</span><span class="s4">&quot;Salário total a receber: R$ %.2f</span><span class="s0">\n</span><span class="s4">&quot;</span><span class="s2">, </span><span class="s1">salarioTotal</span><span class="s2">);</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+
+        <span class="s1">ex25</span><span class="s2">();</span>
+    <span class="s2">}</span>
+    <span class="s0">public static void </span><span class="s1">ex25</span><span class="s2">() {</span>
+        <span class="s1">Scanner scanner </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Scanner</span><span class="s2">(</span><span class="s1">System</span><span class="s2">.</span><span class="s1">in</span><span class="s2">);</span>
+        <span class="s1">String</span><span class="s2">[] </span><span class="s1">array </span><span class="s2">= </span><span class="s0">new </span><span class="s1">String</span><span class="s2">[</span><span class="s5">12</span><span class="s2">];</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s4">&quot;Informe 12 valores (letras ou números):&quot;</span><span class="s2">);</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&lt; </span><span class="s5">12</span><span class="s2">; </span><span class="s1">i</span><span class="s2">++) {</span>
+            <span class="s1">array</span><span class="s2">[</span><span class="s1">i</span><span class="s2">] = </span><span class="s1">scanner</span><span class="s2">.</span><span class="s1">next</span><span class="s2">();</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Saída 1: &quot;</span><span class="s2">);</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s5">11</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&gt;= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i</span><span class="s2">--) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">array</span><span class="s2">[</span><span class="s1">i</span><span class="s2">]);</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">i </span><span class="s2">&gt; </span><span class="s5">0</span><span class="s2">) </span><span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;, &quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">();</span>
+
+        <span class="s0">int </span><span class="s1">countNumeros </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">countLetras </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s1">String valor </span><span class="s2">: </span><span class="s1">array</span><span class="s2">) {</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">valor</span><span class="s2">.</span><span class="s1">matches</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\\</span><span class="s4">d+&quot;</span><span class="s2">)) {</span>
+                <span class="s1">countNumeros</span><span class="s2">++;</span>
+            <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                <span class="s1">countLetras</span><span class="s2">++;</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s1">String</span><span class="s2">[] </span><span class="s1">numeros </span><span class="s2">= </span><span class="s0">new </span><span class="s1">String</span><span class="s2">[</span><span class="s1">countNumeros</span><span class="s2">];</span>
+        <span class="s1">String</span><span class="s2">[] </span><span class="s1">letras </span><span class="s2">= </span><span class="s0">new </span><span class="s1">String</span><span class="s2">[</span><span class="s1">countLetras</span><span class="s2">];</span>
+
+
+        <span class="s0">int </span><span class="s1">idxNum </span><span class="s2">= </span><span class="s5">0</span><span class="s2">, </span><span class="s1">idxLet </span><span class="s2">= </span><span class="s5">0</span><span class="s2">;</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s1">String valor </span><span class="s2">: </span><span class="s1">array</span><span class="s2">) {</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">valor</span><span class="s2">.</span><span class="s1">matches</span><span class="s2">(</span><span class="s4">&quot;</span><span class="s0">\\</span><span class="s4">d+&quot;</span><span class="s2">)) {</span>
+                <span class="s1">numeros</span><span class="s2">[</span><span class="s1">idxNum</span><span class="s2">++] = </span><span class="s1">valor</span><span class="s2">;</span>
+            <span class="s2">} </span><span class="s0">else </span><span class="s2">{</span>
+                <span class="s1">letras</span><span class="s2">[</span><span class="s1">idxLet</span><span class="s2">++] = </span><span class="s1">valor</span><span class="s2">;</span>
+            <span class="s2">}</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;Saída 2: &quot;</span><span class="s2">);</span>
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s1">numeros</span><span class="s2">.</span><span class="s1">length </span><span class="s2">- </span><span class="s5">1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&gt;= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i</span><span class="s2">--) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">numeros</span><span class="s2">[</span><span class="s1">i</span><span class="s2">]);</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">i </span><span class="s2">&gt; </span><span class="s5">0</span><span class="s2">) </span><span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;, &quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot; - &quot;</span><span class="s2">);</span>
+
+        <span class="s0">for </span><span class="s2">(</span><span class="s0">int </span><span class="s1">i </span><span class="s2">= </span><span class="s1">letras</span><span class="s2">.</span><span class="s1">length </span><span class="s2">- </span><span class="s5">1</span><span class="s2">; </span><span class="s1">i </span><span class="s2">&gt;= </span><span class="s5">0</span><span class="s2">; </span><span class="s1">i</span><span class="s2">--) {</span>
+            <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s1">letras</span><span class="s2">[</span><span class="s1">i</span><span class="s2">]);</span>
+            <span class="s0">if </span><span class="s2">(</span><span class="s1">i </span><span class="s2">&gt; </span><span class="s5">0</span><span class="s2">) </span><span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">print</span><span class="s2">(</span><span class="s4">&quot;, &quot;</span><span class="s2">);</span>
+        <span class="s2">}</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">();</span>
+
+        <span class="s1">scanner</span><span class="s2">.</span><span class="s1">close</span><span class="s2">();</span>
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>
